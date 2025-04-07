@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Mastering GitHub Actions: From Beginner to Expert
 
 ### Course link (with a big discount 🙂): https://www.lauromueller.com/courses/mastering-github-actions
@@ -35,3 +36,8 @@ Here are a few tips for you to best navigate the contents of this repository:
 - **[GitHub Actions Examples](https://github.com/actions/starter-workflows)**: Collection of example workflows to help you get started.
   
 - **[GitHub Actions Security Best Practices](https://docs.github.com/en/actions/security-guides/security-hardening-for-github-actions)**: Guidelines to ensure the security of your workflows.
+||||||| empty tree
+=======
+# github-actions-course
+Repository containing all examples, as well as notes for GitHub Actions Course by Lauro Fialho Muller
+>>>>>>> origin/main
