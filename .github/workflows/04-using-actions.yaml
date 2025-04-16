@@ -21,4 +21,6 @@ jobs:
                 cd 04-using-actions
                 npm ci
             - name: Run Unit Tests
-              run: npm run test
+              run: |
+                cd 04-using-actions
+                npm run test
