@@ -17,10 +17,8 @@ jobs:
               with:
                 node-version: '20.x'
             - name: Install Dependencies
-              run: |
-                cd 04-using-actions/react-app
-                npm ci
+              run: npm ci
+              working-directory: 04-using-actions/react-app
             - name: Run Unit Tests
-              run: |
-                cd 04-using-actions/react-app
-                npm run test
+              run: npm run test
+              working-directory: 04-using-actions/react-app
