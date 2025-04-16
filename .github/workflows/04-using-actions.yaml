@@ -4,13 +4,14 @@
 name: 04 - Using Actions
 
 on:
-    push:
+    #push:
+    workflow_dispatch: 
 
 jobs:
     build:
         runs-on: ubuntu-latest
         defaults:
-            run:
+            run:    # default to apply to all 'run' commands.
                 working-directory: 04-using-actions/react-app
         steps:
             - name: Checkout Code
