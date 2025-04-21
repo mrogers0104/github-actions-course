@@ -14,19 +14,20 @@ jobs:
     echo:
         runs-on: ubuntu-latest
         steps:
-          - name: Print start-up data [debug]
-          - if: ${{ inputs.debug }} == 'true'
+          - name: 'Print startu-up data [debug]'
+            if: ${{ inputs.debug }} == 'true'
             run: |
               echo "Triggered by: ${{ GitHub.event }}"
               echo "Branch: ${{ GitHub.Branch }}"
               echo "Commit SHA: ${{ GitHub.SHA}}"
               echo "Runner OS: $RunnerOS"
-          - name: Print start-up data triggered from main [debug]
-          - if: ${{ inputs.debug }} == 'true' && ${{ GitHub.Branch}} == 'main'
+          - name: 'Print start-up data triggered from main [debug]'
+            if: ${{ inputs.debug }} == 'true' && ${{ GitHub.Branch}} == 'main'
             run: |
               echo "Triggered by: ${{ GitHub.event }}"
               echo "Branch: ${{ GitHub.Branch }}"
               echo "Commit SHA: ${{ GitHub.SHA}}"
-              echo "Runner OS: $RunnerOS"
+              echo "Runner OS: ${{ GitHub.OS }}"
           - name: Greetings
-              run: echo "Hello World!!"
+            run: |
+              echo "Hello world!!!"
