@@ -20,14 +20,14 @@ jobs:
               echo "Triggered by: ${{ GitHub.event }}"
               echo "Branch: ${{ GitHub.ref_name }}"
               echo "Commit SHA: ${{ GitHub.SHA}}"
-              echo "Runner OS: $Runner_OS"
+              echo "Runner OS: $RUNNER_OS"
           - name: 'Print start-up data triggered from main [debug]'
             if: ${{ inputs.debug }} == 'true' && ${{ GitHub.ref_name}} == 'main'
             run: |
               echo "Triggered by: ${{ GitHub.event }}"
               echo "Branch: ${{ GitHub.ref_name }}"
               echo "Commit SHA: ${{ GitHub.SHA}}"
-              echo "Runner OS: $Runner_OS"
+              echo "Runner OS: $RUNNER_OS"
           - name: Greetings
             run: |
               echo "Hello world!!!"

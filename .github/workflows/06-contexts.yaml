@@ -1,6 +1,6 @@
 name: 06 - Contexts
 
-run-name: 06 - Contexts | DEBUG - ${{ inputs.debug }}
+run-name: 06 - Contexts | DEBUG - ${{ runner.OS }}
 
 on:
     # push:
